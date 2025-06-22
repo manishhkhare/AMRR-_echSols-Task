@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ShowItems.css';
-import { Close, X } from '@mui/icons-material';
+import CloseIcon from '@mui/icons-material/Close';
 import EnquireryBtn from './EnquireryBtn';
 
 export default function ShowItems() {
@@ -60,8 +60,9 @@ export default function ShowItems() {
 
 {selectedItem && (
   <div className="modal-overlay" onClick={handleCloseModal}>
-    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-      <button className="close-button" onClick={handleCloseModal}><Close/></button>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            
+      <button className="close-button" onClick={handleCloseModal}><CloseIcon/></button>
          
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">

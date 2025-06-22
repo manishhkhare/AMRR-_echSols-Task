@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "heroku-node-server",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -10,6 +10,7 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
